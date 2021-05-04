@@ -34,7 +34,7 @@ Before calling this API make sure you have storage access permission enabled.
     }
     
 ## failure
-    var success = function(err){
+    var failure = function(err){
       console.log(err);
     }
     
