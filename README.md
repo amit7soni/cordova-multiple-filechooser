@@ -60,4 +60,7 @@ Before calling this API make sure you have storage access permission enabled.
     
 ## Supported Platforms
     - Android
+
+## Sample Output
+![Alt Text](sample.gif)
     
