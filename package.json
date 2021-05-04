@@ -1,0 +1,22 @@
+{
+  "name": "cordova-multiple-filechooser",
+  "version": "1.0.0",
+  "description": "Cordova multiple file selector plugin",
+  "cordova": {
+    "id": "cordova-multiple-filechooser",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "file",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-browser",
+    "filechooser",
+    "multiple-filechooser"
+  ],
+  "author": "Amit Soni",
+  "license": "MIT"
+}

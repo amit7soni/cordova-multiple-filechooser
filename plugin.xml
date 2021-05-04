@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-multiple-filechooser"
+    version="1.0.0">
+    <name>Multiple File Chooser</name>
+    <description>Cordova plugin to select multiple files from device storage</description>
+    <license>MIT</license>
+    <keywords></keywords>
+
+    <!-- android -->
+    <platform name="android">
+      <js-module src="www/multipleFilechooser.js" name="multipleFilechooser">
+        <runs/>
+
+        <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
+        <clobbers target="MultipleFileChooser" />
+      </js-module>
+      <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="MultipleFileChooser">
+          <param name="android-package" value="com.custom.cordova.MultipleFileChooser" />
+          <param name="onload" value="true" />
+        </feature>
+      </config-file>
+      
+      <config-file target="AndroidManifest.xml" parent="/manifest">
+          <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+      </config-file>
+      
+      <source-file src="src/android/com/custom/cordova/MultipleFileChooser.java" target-dir="src/com/custom/cordova/" />
+      <source-file src="src/android/com/custom/cordova/UriUtils.java" target-dir="src/com/custom/cordova/" />
+    </platform>
+
+</plugin>
