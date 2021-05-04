@@ -25,7 +25,7 @@ Before calling this API make sure you have storage access permission enabled.
 ## filter (optional)
     { 
       "mime": "application/pdf", // text/plain, image/png, image/jpeg, audio/wav etc
-      "multiple": true // choose multiple files, default value false
+      "multiple": true // choose single or multiple files, default value false
     } 
     
 ## success
