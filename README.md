@@ -1,0 +1,1 @@
+# cordova-multiple-filechooser
