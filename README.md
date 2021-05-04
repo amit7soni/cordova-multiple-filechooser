@@ -23,7 +23,7 @@ Before calling this API make sure you have storage access permission enabled.
     window.MultipleFileChooser.select(filter, success, failure);
     
 ## filter (optional)
-    { 
+    var filter = { 
       "mime": "application/pdf", // text/plain, image/png, image/jpeg, audio/wav etc
       "multiple": true // choose single or multiple files, default value false
     } 
