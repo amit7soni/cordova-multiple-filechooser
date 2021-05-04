@@ -38,6 +38,26 @@ Before calling this API make sure you have storage access permission enabled.
       console.log(err);
     }
     
+## Example
+    var filter = { 
+	  "mime": "image/*", // text/plain, image/png, image/jpeg, audio/wav etc
+	  "multiple": true // choose single or multiple files, default value false
+	};
+
+	var success = function(data){
+	  console.log(data); // returns array of file path for all the selected files
+	}
+
+	var failure = function(err){
+	  console.log(err);
+	}
+    
+    document.querySelector(".btn-open").addEventListener("click", function(){
+
+    	window.MultipleFileChooser.select(filter, success, failure);
+
+    });
+    
 ## Supported Platforms
     - Android
     
