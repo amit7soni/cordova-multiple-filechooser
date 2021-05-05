@@ -64,3 +64,6 @@ Before calling this API make sure you have storage access permission enabled.
 ## Sample Output
 ![Alt Text](sample.gif)
     
+## Sample App
+[Sample App](https://github.com/amit7soni/sample-app-cordova-multiple-filechooser)
+
