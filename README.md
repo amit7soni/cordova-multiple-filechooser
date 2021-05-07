@@ -45,7 +45,7 @@ Before calling this API make sure you have storage access permission enabled.
 	};
 
 	var success = function(data){
-	  console.log(data); // returns array of file path for all the selected files
+	  console.log(data); // ['/storage/emulated/0/downloads/cordova.png','/storage/emulated/0/downloads/android.png'] returns array of file path for all the selected files
 	}
 
 	var failure = function(err){
